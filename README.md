@@ -1,85 +1,114 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Ujjwal%20Singh&fontSize=45&fontColor=ffffff&fontAlignY=35&animation=fadeIn" width="100%"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Ujjwal%20Singh&fontSize=50&fontColor=ffffff&fontAlignY=38&animation=fadeIn" />
 
-<h3>Java Developer | Data Engineering | AI Enthusiast</h3>
+<h2>Java Developer | Golang | Backend Engineer</h2>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=650&lines=Building+Scalable+Backend+Systems;Exploring+Cloud+Computing;Developing+AI%2FML+Powered+Applications;Java+%7C+Go+%7C+Backend+Development;Learning+and+Building+Every+Day" />
 
 <p>
-Building scalable applications and exploring
-the world of Cloud and AI.
+Building scalable applications, exploring cloud technologies,
+and developing intelligent AI-powered solutions.
 </p>
 
 </div>
 
 ---
 
-## About Me
+## 👨‍💻 About Me
 
 - 🎓 Computer Science Engineering Student.
-- 💻 Interested in Java, Backend Development and Cloud Computing.
-- 🤖 Interested in AI, Machine Learning and intelligent applications.
-- 🚀 Building real-world projects and exploring new technologies.
-- 🌱 Continuously learning and contributing to Open Source.
+- ☕ Passionate about Java and Backend Development.
+- 🐹 Exploring Golang and high-performance applications.
+- ☁️ Interested in Cloud Computing, DevOps and distributed systems.
+- 🤖 Exploring Artificial Intelligence and Machine Learning.
+- ⚙️ Interested in designing scalable APIs and backend architectures.
+- 🌱 Continuously learning, building projects and contributing to Open Source.
 
 ---
 
-## Current Focus
+## 🎯 Current Focus
 
-- Strengthening Java and Data Structures & Algorithms.
-- Learning Data Engineering and Cloud Technologies.
-- Exploring backend development and system design.
-- Building practical projects and contributing to Open Source.
-
----
-
-## Tech Stack
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=java,python,js,ts,react,nodejs,express,mongodb,postgres,mysql,docker,aws,git,github&perline=7"/>
-
-</div>
+- Strengthening Java, Golang and Data Structures & Algorithms.
+- Building scalable backend applications and REST APIs.
+- Exploring Spring Boot and Go backend development.
+- Learning AWS, Docker, Kubernetes and cloud infrastructure.
+- Exploring LLMs, AI agents and Machine Learning.
+- Contributing to Open Source projects.
 
 ---
 
-## Featured Projects
+## 🛠️ Tech Stack
+
+### Programming Languages
+
+<p align="left">
+<img src="https://skillicons.dev/icons?i=java,go,python,js,ts&perline=8"/>
+</p>
+
+### Backend Development
+
+<p align="left">
+<img src="https://skillicons.dev/icons?i=spring,nodejs,express,fastapi&perline=8"/>
+</p>
+
+### Cloud & DevOps
+
+<p align="left">
+<img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,linux,git,github&perline=8"/>
+</p>
+
+### Databases
+
+<p align="left">
+<img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis&perline=8"/>
+</p>
+
+### AI / ML
+
+<p align="left">
+<img src="https://skillicons.dev/icons?i=python,tensorflow,pytorch&perline=8"/>
+</p>
+
+---
+
+## 🚀 Featured Projects
 
 ### ♟️ Chessy
-An online chess education platform with interactive learning,
-coach dashboard and intelligent learning features.
+An online chess education platform featuring coach dashboards, interactive learning and intelligent learning experiences.
 
-[Live Project](https://student.chessy.in)
+🔗 [Live Project](https://student.chessy.in)
 
 ### 🌱 AgriSense
-An agriculture-focused project.
+An agriculture-focused technology project.
 
-[GitHub Repository](https://github.com/ThakurUjjwal1706/AgriSense)
+🔗 [GitHub Repository](https://github.com/ThakurUjjwal1706/AgriSense)
 
-### 💼 TechBiz-VyaaparSathi
+### 💼 TechBiz - VyaaparSathi
+A business-focused technology project.
 
-[GitHub Repository](https://github.com/ThakurUjjwal1706/TechBiz-VyaaparSathi)
+🔗 [GitHub Repository](https://github.com/ThakurUjjwal1706/TechBiz-VyaaparSathi)
 
 ### 🌐 SiteGuide
+A web-based project.
 
-[Live Project](https://site-guide-rho.vercel.app/)
+🔗 [Live Project](https://site-guide-rho.vercel.app/)
 
 ---
 
-## GitHub Analytics
+## 📊 GitHub Analytics
 
 <div align="center">
 
-<img height="180em"
-src="https://github-readme-stats.vercel.app/api?username=ThakurUjjwal1706&show_icons=true&theme=tokyonight&hide_border=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=ThakurUjjwal1706&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
 
-<img height="180em"
-src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThakurUjjwal1706&layout=compact&theme=tokyonight&hide_border=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThakurUjjwal1706&layout=compact&theme=tokyonight&hide_border=true"/>
 
 </div>
 
 ---
 
-## 🔥 Contribution Streak
+## 🔥 GitHub Streak
 
 <div align="center">
 
@@ -89,7 +118,7 @@ src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThakurUjjwal
 
 ---
 
-## 📈 Contribution Graph
+## 📈 Contribution Activity
 
 <div align="center">
 
@@ -99,12 +128,16 @@ src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThakurUjjwal
 
 ---
 
-## Connect With Me
+## 🌐 Connect With Me
 
 <div align="center">
 
 <a href="https://www.linkedin.com/in/ujjwal-singh-a5066431b">
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+<a href="https://github.com/ThakurUjjwal1706">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 <a href="https://leetcode.com/u/singhujjwal17/">
@@ -115,18 +148,14 @@ src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThakurUjjwal
 <img src="https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white"/>
 </a>
 
-<a href="https://github.com/ThakurUjjwal1706">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-
 </div>
 
 ---
 
 <div align="center">
 
-### Thanks for visiting my profile! 
+### 💡 Building Today. Innovating Tomorrow.
 
-<img src="https://komarev.com/ghpvc/?username=ThakurUjjwal1706&color=blueviolet&style=flat-square&label=PROFILE+VIEWS"/>
+<img src="https://komarev.com/ghpvc/?username=ThakurUjjwal1706&style=for-the-badge&color=blueviolet&label=PROFILE+VIEWS"/>
 
 </div>
