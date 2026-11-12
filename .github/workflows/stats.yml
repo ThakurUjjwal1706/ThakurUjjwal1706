@@ -23,37 +23,18 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
       - name: Ensure profile directory exists
         run: mkdir -p profile
 
-      - name: Generate GitHub Stats Card
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: stats
-          options: username=ThakurUjjwal1706&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true
-          path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fail_on_error: false
-
-      - name: Generate Top Languages Card
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: top-langs
-          options: username=ThakurUjjwal1706&layout=compact&langs_count=6&theme=tokyonight&hide_border=true
-          path: profile/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fail_on_error: false
-
-      - name: Validate Generated Cards
-        run: |
-          for card in profile/stats.svg profile/top-langs.svg; do
-            if [ -s "$card" ] && grep -q "<svg" "$card"; then
-              echo "✓ $card is valid"
-            else
-              echo "⚠ $card is invalid or empty, preserving prior version..."
-              git checkout -- "$card" 2>/dev/null || true
-            fi
-          done
+      - name: Generate Exact Stats Card
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/update-stats.js
 
       - name: Commit and push changes
         run: |
@@ -63,8 +44,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit in analytics cards."
           else
-            git commit -m "chore(analytics): update GitHub statistics and top languages [skip ci]"
+            git commit -m "chore(analytics): update GitHub statistics with exact metrics [skip ci]"
             git pull --rebase origin main
             git push origin main
           fi
-
