@@ -100,9 +100,11 @@ A web-based project.
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=ThakurUjjwal1706&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
+<img width="48%"
+src="https://github-readme-stats.vercel.app/api?username=ThakurUjjwal1706&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=86400" />
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThakurUjjwal1706&layout=compact&theme=tokyonight&hide_border=true"/>
+<img width="48%"
+src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThakurUjjwal1706&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=86400" />
 
 </div>
 
@@ -122,7 +124,8 @@ A web-based project.
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ThakurUjjwal1706&theme=tokyo-night&hide_border=true"/>
+<img width="100%"
+src="https://github-readme-activity-graph.vercel.app/graph?username=ThakurUjjwal1706&theme=tokyo-night&hide_border=true&area=true" />
 
 </div>
 
