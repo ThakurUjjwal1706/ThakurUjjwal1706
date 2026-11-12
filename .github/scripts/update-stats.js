@@ -59,11 +59,18 @@ async function run() {
     }
 
     const publicRepos = user.public_repos || (Array.isArray(repos) ? repos.length : 21);
-    const mergedPrs = (mergedPrsData && typeof mergedPrsData.total_count === 'number') ? mergedPrsData.total_count : 5;
-    const totalCommits = (commitsData && typeof commitsData.total_count === 'number' && commitsData.total_count > 0) ? commitsData.total_count : 71;
+
+    // Dynamic search count with minimum baseline to protect against transient search reindexing
+    const fetchedMergedPrs = (mergedPrsData && typeof mergedPrsData.total_count === 'number') ? mergedPrsData.total_count : 0;
+    const envMergedPrs = process.env.OVERRIDE_MERGED_PRS ? parseInt(process.env.OVERRIDE_MERGED_PRS, 10) : 0;
+    const mergedPrs = envMergedPrs || Math.max(fetchedMergedPrs, 7);
+
+    const fetchedCommits = (commitsData && typeof commitsData.total_count === 'number') ? commitsData.total_count : 0;
+    const totalCommits = Math.max(fetchedCommits, 79);
+
     const rankGrade = calculateGrade(totalCommits, mergedPrs, publicRepos, totalStars);
 
-    console.log({
+    console.log('Final Calculated Metrics:', {
       publicRepos,
       totalStars,
       mergedPrs,
@@ -145,4 +152,3 @@ async function run() {
 }
 
 run();
-
