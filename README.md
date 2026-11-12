@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:1a1b26,25:1f2335,60:7aa2f7,100:bb9af7&height=220&section=header&text=UJJWAL%20SINGH&fontSize=46&fontColor=ffffff&fontAlignY=38&animation=fadeIn" alt="Ujjwal Singh Profile Banner" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:0d1117,20:13233a,50:1d4ed8,75:2563eb,100:38bdf8&height=220&section=header&text=UJJWAL%20SINGH&fontSize=46&fontColor=ffffff&fontAlignY=38&animation=fadeIn" alt="Ujjwal Singh Profile Banner" />
 
 <br/>
 
