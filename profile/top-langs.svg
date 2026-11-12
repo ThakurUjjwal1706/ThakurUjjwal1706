@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="195" viewBox="0 0 340 195" fill="none" role="img" aria-label="Most Used Languages">
+  <style>
+    .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #70a5fd; animation: fadeInAnimation 0.8s ease-in-out forwards; }
+    .lang-name { font: 400 11px 'Segoe UI', Ubuntu, Sans-Serif; fill: #a9b1d6; }
+    .stagger { opacity: 0; animation: fadeInAnimation 0.3s ease-in-out forwards; }
+    @keyframes fadeInAnimation { from { opacity: 0; } to { opacity: 1; } }
+  </style>
+
+  <rect data-testid="card-bg" x="0.5" y="0.5" rx="4.5" height="99%" stroke="#1a1b26" width="339" fill="#1a1b26" stroke-opacity="1" />
+
+  <g transform="translate(25, 35)">
+    <text x="0" y="0" class="header" data-testid="header">Most Used Languages</text>
+  </g>
+
+  <g transform="translate(25, 55)">
+    <!-- Multi-segment Progress Bar -->
+    <svg width="290" height="8">
+      <mask id="bar-mask">
+        <rect x="0" y="0" width="290" height="8" rx="5" fill="white" />
+      </mask>
+      <g mask="url(#bar-mask)">
+        <!-- Java: 38% -->
+        <rect x="0" y="0" width="110" height="8" fill="#b07219" />
+        <!-- Go: 26% -->
+        <rect x="110" y="0" width="75" height="8" fill="#00add8" />
+        <!-- Python: 16% -->
+        <rect x="185" y="0" width="46" height="8" fill="#3572A5" />
+        <!-- JavaScript: 11% -->
+        <rect x="231" y="0" width="32" height="8" fill="#f1e05a" />
+        <!-- TypeScript: 9% -->
+        <rect x="263" y="0" width="27" height="8" fill="#3178c6" />
+      </g>
+    </svg>
+
+    <!-- Language Labels -->
+    <g transform="translate(0, 25)">
+      <!-- Row 1: Left column -->
+      <g transform="translate(0, 0)" class="stagger" style="animation-delay: 450ms">
+        <circle cx="5" cy="6" r="5" fill="#b07219" />
+        <text x="18" y="10" class="lang-name">Java 38.0%</text>
+      </g>
+      <!-- Row 1: Right column -->
+      <g transform="translate(150, 0)" class="stagger" style="animation-delay: 550ms">
+        <circle cx="5" cy="6" r="5" fill="#00add8" />
+        <text x="18" y="10" class="lang-name">Go 26.0%</text>
+      </g>
+
+      <!-- Row 2: Left column -->
+      <g transform="translate(0, 24)" class="stagger" style="animation-delay: 650ms">
+        <circle cx="5" cy="6" r="5" fill="#3572A5" />
+        <text x="18" y="10" class="lang-name">Python 16.0%</text>
+      </g>
+      <!-- Row 2: Right column -->
+      <g transform="translate(150, 24)" class="stagger" style="animation-delay: 750ms">
+        <circle cx="5" cy="6" r="5" fill="#f1e05a" />
+        <text x="18" y="10" class="lang-name">JavaScript 11.0%</text>
+      </g>
+
+      <!-- Row 3: Left column -->
+      <g transform="translate(0, 48)" class="stagger" style="animation-delay: 850ms">
+        <circle cx="5" cy="6" r="5" fill="#3178c6" />
+        <text x="18" y="10" class="lang-name">TypeScript 9.0%</text>
+      </g>
+      <!-- Row 3: Right column -->
+      <g transform="translate(150, 48)" class="stagger" style="animation-delay: 950ms">
+        <circle cx="5" cy="6" r="5" fill="#7aa2f7" />
+        <text x="18" y="10" class="lang-name">Other &lt; 1%</text>
+      </g>
+    </g>
+  </g>
+</svg>

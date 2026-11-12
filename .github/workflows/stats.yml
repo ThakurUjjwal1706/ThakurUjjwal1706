@@ -1,0 +1,69 @@
+name: Generate GitHub Analytics
+
+on:
+  schedule:
+    # Runs daily at midnight UTC
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: stats-update
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Generate Stats SVGs
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Ensure profile directory exists
+        run: mkdir -p profile
+
+      - name: Generate GitHub Stats Card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=ThakurUjjwal1706&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: false
+
+      - name: Generate Top Languages Card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=ThakurUjjwal1706&layout=compact&langs_count=6&theme=tokyonight&hide_border=true
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: false
+
+      - name: Validate Generated Cards
+        run: |
+          for card in profile/stats.svg profile/top-langs.svg; do
+            if [ -s "$card" ] && grep -q "<svg" "$card"; then
+              echo "✓ $card is valid"
+            else
+              echo "⚠ $card is invalid or empty, preserving prior version..."
+              git checkout -- "$card" 2>/dev/null || true
+            fi
+          done
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/stats.svg profile/top-langs.svg
+          if git diff --staged --quiet; then
+            echo "No changes to commit in analytics cards."
+          else
+            git commit -m "chore(analytics): update GitHub statistics and top languages [skip ci]"
+            git pull --rebase origin main
+            git push origin main
+          fi
