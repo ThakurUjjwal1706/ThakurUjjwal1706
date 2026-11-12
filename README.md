@@ -142,14 +142,6 @@
 
 ---
 
-## 📈 Contribution Activity
-
-<p align="center">
-  <img src="./profile/snake.svg" alt="GitHub Contribution Snake Animation" width="100%" />
-</p>
-
----
-
 ## 🌐 Connect With Me
 
 <div align="center">
